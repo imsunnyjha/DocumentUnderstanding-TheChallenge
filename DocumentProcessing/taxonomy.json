@@ -2,179 +2,74 @@
   "DataContractVersion": "1.1",
   "DocumentTypes": [
     {
-      "DocumentTypeId": "Receipts.NoCategory.Bill",
-      "Group": "Receipts",
-      "Category": "Invoices",
-      "Name": "Bill",
+      "DocumentTypeId": "HotFolder.Form.SEC",
+      "Group": "HotFolder",
+      "Category": "Form",
+      "Name": "SEC",
       "OptionalUniqueIdentifier": "",
       "TypeField": {
-        "FieldId": "Receipts.NoCategory.Bill.DocumentType",
+        "FieldId": "HotFolder.Form.SEC.DocumentType",
         "FieldName": "Document Type"
       },
-      "Fields": [
-        {
-          "FieldId": "Receipts.NoCategory.Bill.receipt-name",
-          "FieldName": "receipt-name",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "Color",
-              "Value": "#038a18"
-            },
-            {
-              "Key": "Hotkey",
-              "Value": "r"
-            }
-          ],
-          "RuleSet": null
-        },
-        {
-          "FieldId": "Receipts.NoCategory.Bill.vendor-address",
-          "FieldName": "vendor-address",
-          "IsMultiValue": false,
-          "Type": "Address",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "Color",
-              "Value": "#fa6616"
-            },
-            {
-              "Key": "Hotkey",
-              "Value": "v"
-            }
-          ],
-          "RuleSet": null
-        },
-        {
-          "FieldId": "Receipts.NoCategory.Bill.phone-no",
-          "FieldName": "phone-no",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "Color",
-              "Value": "#8a97a0"
-            },
-            {
-              "Key": "Hotkey",
-              "Value": "h"
-            }
-          ],
-          "RuleSet": {
-            "Criticality": "Should",
-            "Rules": [
-              {
-                "Name": "phone-no",
-                "Type": "Regex",
-                "LogicalOperator": "AND",
-                "ComparisonOperator": "Equals",
-                "Expression": "\\d{3}-\\d{3}-\\d{4}",
-                "SetValues": []
-              }
-            ]
-          }
-        },
-        {
-          "FieldId": "Receipts.NoCategory.Bill.line-items",
-          "FieldName": "line-items",
-          "IsMultiValue": false,
-          "Type": "Table",
-          "DeriveFieldsFormat": "",
-          "Components": [
-            {
-              "FieldId": "Receipts.NoCategory.Bill.line-items.Item",
-              "FieldName": "Item",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": [],
-              "RuleSet": null
-            },
-            {
-              "FieldId": "Receipts.NoCategory.Bill.line-items.Amount",
-              "FieldName": "Amount",
-              "IsMultiValue": false,
-              "Type": "Number",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": [],
-              "RuleSet": null
-            }
-          ],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "Color",
-              "Value": "#6eb84a"
-            },
-            {
-              "Key": "Hotkey",
-              "Value": "l"
-            }
-          ],
-          "RuleSet": null
-        },
-        {
-          "FieldId": "Receipts.NoCategory.Bill.total-amount",
-          "FieldName": "total-amount",
-          "IsMultiValue": false,
-          "Type": "Number",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "Color",
-              "Value": "#a11cda"
-            },
-            {
-              "Key": "Hotkey",
-              "Value": "a"
-            }
-          ],
-          "RuleSet": null
-        },
-        {
-          "FieldId": "Receipts.NoCategory.Bill.tax",
-          "FieldName": "tax",
-          "IsMultiValue": false,
-          "Type": "Number",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "Color",
-              "Value": "#9173eb"
-            },
-            {
-              "Key": "Hotkey",
-              "Value": "x"
-            }
-          ],
-          "RuleSet": null
-        }
-      ]
+      "Fields": []
+    },
+    {
+      "DocumentTypeId": "HotFolder.Form.Tax",
+      "Group": "HotFolder",
+      "Category": "Form",
+      "Name": "Tax",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "HotFolder.Form.Tax.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": []
+    },
+    {
+      "DocumentTypeId": "HotFolder.Invoice.Invoice",
+      "Group": "HotFolder",
+      "Category": "Invoice",
+      "Name": "Invoice",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "HotFolder.Invoice.Invoice.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": []
+    },
+    {
+      "DocumentTypeId": "HotFolder.Receipts.ShoppingBill",
+      "Group": "HotFolder",
+      "Category": "Receipts",
+      "Name": "ShoppingBill",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "HotFolder.Receipts.ShoppingBill.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": []
+    },
+    {
+      "DocumentTypeId": "HotFolder.Certificate.Certificate",
+      "Group": "HotFolder",
+      "Category": "Certificate",
+      "Name": "Certificate",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "HotFolder.Certificate.Certificate.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": []
     }
   ],
   "Groups": [
     {
-      "Name": "Receipts",
+      "Name": "HotFolder",
       "Categories": [
-        "Invoices"
+        "Form",
+        "Invoice",
+        "Receipts",
+        "Certificate"
       ]
     }
   ],
